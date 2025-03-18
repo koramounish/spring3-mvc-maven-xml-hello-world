@@ -8,10 +8,11 @@
 	<name>spring3 mvc maven</name>
 
 	<properties>
-		<maven.compiler.source>17</maven.compiler.source>
-                <maven.compiler.target>17</maven.compiler.target>
-                <spring.version>3.2.13.RELEASE</spring.version>
-                <jstl.version>1.2</jstl.version>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <spring.version>3.2.13.RELEASE</spring.version>
+    <jstl.version>1.2</jstl.version>
+</properties>
 
 	</properties>
 
@@ -68,9 +69,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-           
-          
-</plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
 			
 		</plugins>
 	</build>
