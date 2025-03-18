@@ -60,7 +60,7 @@
                     <downloadSources>true</downloadSources>
                     <downloadJavadocs>true</downloadJavadocs>
                     <wtpversion>2.0</wtpversion>
-                    <wtpContextName>spring3</wtpContextName> <!-- Correctly closed tag -->
+                    <wtpContextName>spring3</wtpContextName>
                 </configuration>
             </plugin>
 
@@ -68,6 +68,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.1.4</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version> <!-- Updated to resolve the error -->
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml> <!-- If using Servlet 3.0+ -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
